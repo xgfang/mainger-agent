@@ -1,0 +1,17 @@
+# FILL IN: choose your vendor and model.
+# Supported vendors: anthropic, openai
+# Models are the vendor-native names; check the vendor's docs for what's current.
+
+vendor: openai
+model: gpt-4o-mini
+max_tokens: 4096
+temperature: 0.0
+max_tool_iterations: 8
+
+# Set scaffold: true when running the SFT-tuned Qwen-1.5B locally. The FT
+# model autonomously emits the first tool call (detect_regime) but does not
+# chain to compute_eta_bound and fit_integrated_estimator on its own; the
+# scaffolded workflow prompts each step explicitly and force-executes if
+# the model picks the wrong tool. Has no effect for capable models like
+# GPT-4o or Claude.
+# scaffold: false

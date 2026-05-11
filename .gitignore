@@ -1,0 +1,33 @@
+# Secrets — never commit
+.env
+.env.local
+*.key
+
+# Run outputs and session data
+runs/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node (in case anyone adds JS tooling)
+node_modules/
+
+# OS metadata (Dropbox/macOS clutter)
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
+# R artifacts
+.Rhistory
+.RData
+.Ruserdata
+
+# Dropbox conflict files
+*conflicted copy*
